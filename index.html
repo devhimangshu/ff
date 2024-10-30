@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -80,17 +81,122 @@
     <li class="list-group-item">Pay Using UPI</li>
     
     <!-- Example Item -->
-    <style>
-      .bonus-box {
+   <style>/* General Styling */
+    body {
+        background: #0f0f0f;
+        color: #cfcfcf;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Logo and Banner */
+    .banner img {
+        width: 100%;
+        max-height: 80px;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+    
+    /* Heading Styling */
+    h1 {
+        color: #ffb300;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    
+    /* Form Container */
+    .form-container {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /* Input Field */
+    #player-id {
+        background: #1b1b1b;
+        color: #eaeaea;
+        border: 1px solid #555;
+        padding: 10px;
+        width: 100%;
+        border-radius: 8px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        outline: none;
+        transition: 0.3s ease;
+    }
+    #player-id:focus {
+        border-color: #ffb300;
+        box-shadow: 0 0 5px rgb(255, 179, 0);
+    }
+    
+    /* Button */
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #ffb300;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+    button:hover {
+        background-color: #ffe3a2;
+        transform: translateY(-2px);
+    }
+    
+    /* List Group */
+    #item-list {
+        display: none;
+        padding: 0;
+        list-style-type: none;
+        margin-top: 15px;
+        margin-left: 15px; /* Left margin added */
+        margin-right: 15px; /* Right margin added */
+    }
+    
+    /* List Items */
+    .list-group-item {
+        background: #1e1e1e;
+        color: #ddd;
+        padding: 12px 20px; /* Left and right padding added */
+        margin-bottom: 10px;
+        border-radius: 6px;
+        transition: background 0.2s, transform 0.2s;
+        position: relative;
+        border: 1px solid #333;
+    }
+    .list-group-item:hover {
+        background-color: #252525;
+        transform: translateY(-2px);
+        
+    }
+    
+    /* Footer */
+    #footer {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.85rem;
+        color: #666;
+    }
+    
+    /* Bonus Box */
+    .bonus-box {
         display: inline-block;
         padding: 2px 8px;
-        background-color: #fff8dc; /* Light yellow background */
-        color: #ffdd00; /* Yellow text color */
-        border: 1px solid #ffdd00; /* Yellow border */
+        background-color: #fff8dc00; /* Light yellow background */
+        color: #ffb300; /* Yellow text color */
+        border: 1px solid #ffb300; /* Yellow border */
         border-radius: 4px;
-        font-weight: normal; /* Remove bold */
-        font-size: 0.9em; /* Slightly smaller font size */
-      }
+        font-weight: normal;
+        font-size: 0.7em;
+    }
     </style>
     
     <li class="list-group-item">
