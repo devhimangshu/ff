@@ -150,18 +150,18 @@
             document.body.innerHTML = `
                <div class="d-flex justify-content-center align-items-center vh-100">
     <div class="card text-center" style="max-width: 300px;">
-        <div class="card-header bg-success text-white">
-            <h4 class="mb-0">Payment Successful</h4>
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0">Payment Failed</h4>
         </div>
         <div class="card-body">
-            <div class="success-icon">
-                <i class="fas fa-check-circle" style="font-size: 3rem; color: #198754;"></i> <!-- Reduced icon size -->
+            <div class="error-icon">
+                <i class="fas fa-times-circle" style="font-size: 3rem; color: #dc3545;"></i> <!-- Error icon -->
             </div>
-            <p>Your payment of <strong>₹80</strong> has been successfully processed!</p>
-            <a href="https://gameskharido.site" class="btn btn-primary mt-2">Back to Home</a> <!-- Adjusted margin -->
+            <p>Unfortunately, your payment of <strong>₹80</strong> could not be processed.</p>
+            <a href="https://gameskharido.site" class="btn btn-secondary mt-2">Try Again</a> <!-- Adjusted margin -->
         </div>
         <div class="card-footer bg-transparent footer-text">
-            Thank you for your transaction!
+            Please check your payment details and try again.
         </div>
     </div>
 </div>
@@ -170,7 +170,7 @@
     .card {
         padding: 1rem; /* Adjust padding for the card */
     }
-    .success-icon {
+    .error-icon {
         margin-bottom: 0.5rem; /* Reduced margin below the icon */
     }
 </style>
